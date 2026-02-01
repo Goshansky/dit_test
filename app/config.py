@@ -8,3 +8,5 @@ DATASET_PATH = os.getenv("DATASET_PATH", "data/dataset.json")
 
 EMBEDDING_MODEL_NAME = os.getenv("EMBEDDING_MODEL", "deepvk/USER-bge-m3")
 EMBEDDING_VECTOR_SIZE = 1024
+
+COLLECTION_NAME = os.getenv("QDRANT_COLLECTION", "search")
