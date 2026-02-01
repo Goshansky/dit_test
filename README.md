@@ -23,6 +23,21 @@ API на Python + Litestar для семантического поиска по
 └── README.md
 ```
 
+## Клонирование репозитория
+
+```bash
+git clone https://github.com/Goshansky/dit_test.git
+cd dit_test
+```
+
+Для локального запуска (без Docker для приложения) создайте виртуальное окружение и установите зависимости:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+# или: source .venv/bin/activate   # Linux / macOS
+```
+
 ## Запуск
 
 ### Всё в Docker
