@@ -8,7 +8,7 @@ class SearchBody(BaseModel):
     query: str
 
 
-@post("/search")
+@post("/search", sync_to_thread=True)
 def search_endpoint(request: Request, data: SearchBody) -> dict:
     client = request.app.state.qdrant
     results = vector_search(client, data.query, top_k=5)
