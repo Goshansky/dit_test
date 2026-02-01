@@ -1,0 +1,2 @@
+litestar[standard]>=2.18.0
+qdrant-client>=1.12.0
