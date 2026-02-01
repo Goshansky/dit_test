@@ -1,3 +1,5 @@
 litestar[standard]>=2.18.0
 qdrant-client>=1.12.0
 sentence-transformers>=3.0.0
+
+pydantic~=2.12.5

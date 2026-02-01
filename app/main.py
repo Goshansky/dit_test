@@ -4,6 +4,7 @@ from litestar import Litestar
 from qdrant_client import QdrantClient
 
 from app.config import QDRANT_HOST, QDRANT_PORT
+from app.routes.search import search_endpoint
 
 
 def get_qdrant() -> QdrantClient:
@@ -22,6 +23,6 @@ async def qdrant_lifespan(app: Litestar):
 
 
 app = Litestar(
-    route_handlers=[],
+    route_handlers=[search_endpoint],
     lifespan=[qdrant_lifespan],
 )
